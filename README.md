@@ -1,6 +1,6 @@
 # Battery Health Check for Jamf Pro
 
-Professional battery monitoring for macOS deployed via Jamf Pro Self Service.
+Battery monitoring for macOS deployed via Jamf Pro Self Service.
 
 ![macOS](https://img.shields.io/badge/macOS-13.0+-blue)
 ![Jamf Pro](https://img.shields.io/badge/Jamf%20Pro-Required-orange)
@@ -23,33 +23,13 @@ When battery failure is detected, users get a direct link to check AppleCare cov
 
 ---
 
-## Screenshots
-
-### Battery Health Display
-
-**Normal Battery:**
-
-![Normal Battery Status](images/screenshot-normal-battery.png)
-
-**Battery Failure:**
-
-![Battery Failure](images/screenshot-battery-failure.png)
-
-### In Self Service
-
-![Self Service App](images/self-service-app-view.png)
-
-> Screenshots show real deployment. See [SCREENSHOTS_NEEDED.md](SCREENSHOTS_NEEDED.md) to capture your own.
-
----
-
 ## Requirements
 
 - macOS 13.0 (Ventura) or later
 - Jamf Pro with agent installed
 - MacBook, MacBook Air, or MacBook Pro
 
-Desktop Macs get a friendly message explaining this tool is for laptops only.
+Desktop Macs get a friendly message explaining that this tool is for laptops only.
 
 ---
 
@@ -63,7 +43,7 @@ Desktop Macs get a friendly message explaining this tool is for laptops only.
 - **Script:** Paste contents of `battery_health_check_v2.1.sh`
 - Click **Save**
 
-### 2. Create Self Service Policy
+### 2. Create Self-Service Policy
 
 **Computers** → **Policies** → **New**
 
@@ -81,7 +61,7 @@ Desktop Macs get a friendly message explaining this tool is for laptops only.
 - **Display Name:** Check Battery Health
 - **Description:**
   ```
-  View your Mac's battery health including cycle count, 
+  View your Mac's battery health, including cycle count, 
   charge status, and battery age.
   ```
 - **Category:** Utilities
@@ -170,7 +150,7 @@ Pull requests welcome! Please test on macOS 13+ before submitting.
 <details>
 <summary>How battery age is calculated (click to expand)</summary>
 
-Apple stores manufacture date as an encoded integer:
+Apple stores the manufacture date as an encoded integer:
 ```
 Formula: (year - 1980) × 512 + month × 32 + day
 Example: June 15, 2020 = 20,687
