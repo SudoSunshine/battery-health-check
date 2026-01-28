@@ -3,7 +3,6 @@
 Battery monitoring for macOS deployed via Jamf Pro Self Service.
 
 ![macOS](https://img.shields.io/badge/macOS-13.0+-blue)
-![Jamf Pro](https://img.shields.io/badge/Jamf%20Pro-Required-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Version](https://img.shields.io/badge/version-2.1-brightgreen)
 
