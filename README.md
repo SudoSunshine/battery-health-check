@@ -144,7 +144,7 @@ MIT - see [LICENSE](LICENSE)
 ## Author
 
 Ellie Romero  
-ellie.romero@jamf.com
+ellie@theecr.com
 
 ---
 
