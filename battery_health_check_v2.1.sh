@@ -4,7 +4,7 @@
 # Battery Health Check Script for Jamf Pro Self Service
 #
 # Author: Ellie Romero
-# Email: ellie.romero@jamf.com
+# Email: ellie@theecr.com
 # Date: January 30, 2026
 # Version: 2.2
 #
