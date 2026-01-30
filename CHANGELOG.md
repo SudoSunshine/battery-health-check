@@ -5,6 +5,26 @@ All notable changes to the Battery Health Check script will be documented in thi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.2] - 2026-01-30
+
+### Removed
+- **Inventory update (recon) functionality** - Removed for safety and performance
+- run_recon() function entirely
+- Recon-related constants (RECON_REFRESH_INTERVAL, RECON_WAIT_SLEEP, RECON_TITLE)
+- JAMF_BINARY constant (no longer needed)
+- cleanup() function and trap (no longer needed)
+- reconStatusFile variable
+
+### Changed
+- Simplified display_results() - shows only battery info with OK/Close buttons
+- Battery failure dialog now shows "Check Coverage" or "Close" only
+- Updated header documentation to remove inventory update references
+
+### Performance
+- Line count: 344 lines (down from 475 in v2.1, 27% smaller)
+- Safer execution (no external command execution)
+- No risk of performance degradation from recon
+
 ## [2.1] - 2025-12-18
 
 ### Added
